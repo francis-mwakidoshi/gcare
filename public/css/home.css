@@ -1,0 +1,25 @@
+
+root { 
+    display: block;
+}
+body{
+
+
+    text-align: justify;
+    font-family: 'Times New Roman',Times,serif;
+    background-image: url(http://localhost/Gcare/public/images/gmap.jpg);
+
+
+}
+#head{
+
+     background-color: #cccccc;
+    width: 900px;
+    height: 100px;
+    margin-left: 225px;
+    margin-right: 300px;
+
+position:relative;
+    background-image: url(http://localhost/Gcare/public/images/header1.png);
+
+}

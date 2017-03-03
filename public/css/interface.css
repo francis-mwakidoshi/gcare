@@ -1,0 +1,136 @@
+/* 
+    Document   : interface
+    Created on : Dec 27, 2012, 3:13:59 PM
+    Author     : CHEPKURUI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+
+}
+body{
+
+
+    text-align: justify;
+    font-family: 'Times New Roman',Times,serif;
+    background-image: url(http://localhost/Gcare/public/images/gmap.jpg);
+
+    
+}
+#header{
+    background-color: #cccccc;
+    width: 900px;
+    height: 100px;
+    margin-left: 225px;
+    margin-right: 300px;
+    
+position:relative;
+    background-image: url(http://localhost/Gcare/public/images/header1.png);
+    
+    
+   
+    
+}
+
+
+#content{
+     position: relative;
+
+  width: 900px;
+  height:550px;
+
+    margin-left: 225px;
+    margin-right: 300px;
+
+    background-color: #eae6dd;
+
+}
+
+
+#menubar{
+    width: 900px;
+    height: 42px;
+    
+   
+
+    background-repeat:no-repeat;
+
+    font-family: 'Times New Roman',Times,serif;
+background-color: #ebe9d4;
+
+    border-top-width: 2px;
+    border-top-style: groove;
+    border-top-color: #660000;
+
+    border-bottom-style: groove;
+    border-bottom-width: 2px;
+    border-bottom-color: #660000;
+}
+#maincon{
+     width: 550px;
+    height: 506px;
+  float:left;
+  padding-left:15px;
+  position:absolute;
+}
+h1,h2{
+    color:#660000;
+}
+
+#login{
+    text-align:center;
+    float:right;
+    width:300px;
+    height:496px;
+    position:relative;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding-top:10px;
+}
+.loginf{
+    
+    background-color:#ebe9d4;
+}
+#user,#password,.loginf,#newuserform,#name,#usern,#passw,#email,#phone,#id{
+  -border-radius:1em;
+    -moz-border-radius:1em;
+    -webkit-border-radius:1em;
+}
+#newuserform
+{
+ background-color:#ebe9d4;
+
+
+    text-align: center;
+}
+table{
+    padding-left:30px;
+}
+
+
+
+
+#footer{
+
+    margin-left: 225px;
+    margin-right: 300px;
+    width: 900px;
+    height: 80px;
+    
+    
+  position:relative;
+    
+     text-align:center;
+    background-color: #ebe9d4;
+   
+}
+
+
+

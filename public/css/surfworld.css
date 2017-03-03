@@ -1,0 +1,584 @@
+ html { 
+      height: 100%;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body { 
+      height: 100%; margin:0px;padding:2px;font-family:Arial;font-size:15px;line-height:26px
+    }
+    #Map {
+      height:640px;
+      width:100%;
+     -moz-box-shadow: 0 0 15px #888;
+     -webkit-box-shadow: 0 0 15px #888;
+     box-shadow: 0 0 15px #888;
+      }
+      
+   
+    /*Added 1/17/11*/
+    #loe {border-spacing:0px;padding-left:2px}
+     #loe .rarat {vertical-align:middle;padding-left:10px;font-size:1.25em;color:Black;font-weight:bold;}
+ /*Added End*/
+    #searchbox { 
+      border-color: #CCCCCC #CCCCCC #999999;
+      border-style: solid;
+      border-width: 0px;
+        /*edited 1/17/11*/
+      height: 115px;
+        /*end edited 1/17/11*/
+      padding-right: 32px;
+      width: 100%;
+      margin: 2px;
+    }
+    #container {
+      height: 90%;
+      margin-top:10px;
+    }
+    #search {
+      border: 0 none;
+      float: left;
+      font-size: 138%;
+      font-size-adjust: none;
+      font-stretch: normal;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      height: 22px;
+      line-height: normal;
+      vertical-align: top;
+      width: 100%;
+      z-index:1;
+      padding-top: 2px;
+    }
+    .mytextbox 
+{
+	background:#FFFFFF url(../Images/search.png) no-repeat 4px 4px;
+	padding:4px 4px 4px 22px;
+	border:1px solid #CCCCCC;
+	
+}
+/*Start Added 1/17/11*/
+#head
+{
+   background-color:#ebe9d4;
+    background-repeat:repeat-x;
+    padding:4px;
+    border:1px solid gray;
+    border-bottom:0px;
+}
+#header img
+{
+    cursor:move;
+    float:right;
+    height:15px
+}
+   #head .headertitle
+   {
+       font-size:20px;
+       font-weight:italic;
+       color:#660000;
+   }
+  #empty
+  {
+      color:red;
+      font-weight:bold;
+      font-size:14px;
+      background-color:#F5F5DC;
+      border:1px solid gray;
+      text-align:center;
+      }
+  #results
+  {
+      -moz-box-shadow:0 0 20px -5px #444;
+      -webkit-box-shadow:0 0 20px -5px #444;
+      box-shadow:0 0 20px -5px #444;
+  }
+  /*End Added 1/17/11*/  
+#searchwell {
+    padding:5px;
+      }
+        .searchwelltransform
+      {
+       overflow-y:scroll;
+       border:1px solid gray;
+       border-top:0px;
+       background-color:#F5F5DC ;
+       opacity:.83;
+       filter:alpha(opacity=83)
+          }
+          .searchwellinvisible
+          {
+           display:none; 
+          }
+ #searchwell .unselected {
+      padding-left: 18px;
+      padding-top: 1px;
+      background-image: url("http://labs.google.com/ridefinder/images/mm_20_yellow.png");
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+    /*Start of Icon Class*/
+    .customresult
+  {   
+   padding-left: 34px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/cluster3.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+ .clinicresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/doctor.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .hotelresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/hotel.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+   }
+   .foodresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/restaurant.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .barresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/bar.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .bookresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/bookstore.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .wifiresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/wifi.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .carresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/car.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .mallresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/shoppingmall.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .parkresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/park.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .apartmentresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/apartment.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .realtyresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/realestate.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .parkingresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/parking.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .movieresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/cinema.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .hospitalresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/hospital.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .coffeeresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/coffee.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .bankresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/bank.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .atmresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/atm.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .airportresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/airport.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .schoolresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/school.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .universityresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/university.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     .gymresult
+  {   
+   padding-left: 36px;
+   padding-top: 1px;
+   cursor: pointer;
+   background-image: url(../Images/icons/gym.png);
+   background-repeat: no-repeat;
+   background-position: top left;
+     }
+     /*End*/
+    .unselected .gs-watermark {
+      display: none;
+    }
+ 
+    #searchwell .select 
+    {
+      margin-bottom: 1em;
+    }
+ 
+    .unselected .select {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #7777cc;
+    }
+ 
+    #selected {
+      margin-top: 1em;
+    }
+ 
+    #selected .gs-result {
+      margin-bottom: 1em;
+    }
+ 
+    #selected .gs-result 
+    {
+      padding-left: 30px;
+      padding-top: 3px;
+      background-image: url("http://www.google.com/mapfiles/icon.png");
+      background-repeat: no-repeat;
+      background-position: top left;
+      }
+    
+ #more_innerer 
+ {
+  text-align:center;
+  font-size:13px;
+	background-color: #fff;
+	color: blue;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #c0c0c0;
+ cursor: pointer;
+ margin-top:2px;
+ text-decoration:underline;
+ 
+}
+  #more_innerer.rocco 
+  {
+	color:blue;
+}
+ 
+#more_innerer.highlight
+{
+	font-weight: bold;
+	border-right-color: #6495ed;
+	border-bottom-color: #6495ed;
+	color:red;
+	margin-top:2px;
+	text-decoration:none;
+}
+ 
+#box   
+{
+    position:absolute;
+	left:370px;
+	margin-top:1px;
+	z-index:10;
+	font-size:12px;
+	padding: 16px;
+	width:215px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid gray;
+	display: none;
+	cursor:default;
+}
+ 
+#box.highlight 
+{
+    width:119px;
+	border-width:2px;
+	text-decoration: none;
+	color:Red;
+}
+  .merl
+  {
+  font-weight:bold;
+  }
+.slogan
+      {
+     font-size:.95em;
+     font-style:italic;
+     font-family:Arial
+          }
+   div#divLoading
+   { position:absolute;display:none;top:40%;left:35%;width:302px;z-index:1;background:transparent url(../Images/loading1.gif) no-repeat;padding:30px 10px; }
+   .fielder
+   {
+    height:119px;border:1px solid silver;width:360px;padding:10px;padding-bottom:auto   
+   }
+   #cj
+   {
+   border:1px solid black;width:160px;height:22px    
+   }
+   .sample
+   {
+  font-style:italic;
+       }
+   .divabout
+   {
+   text-align:justify;margin-left:50px;margin-top:35px    
+   }
+   #notify
+   {
+       width:400px;overflow:hidden;
+   }
+   .merle
+   {
+    font-size:1em
+       }
+      .hint
+        {
+         font-style:italic;font-size:.95em;color:black;margin-right:80px    
+        }
+                 .divleft
+                 {
+                  width:180px;
+                  z-index:5;
+                  position:absolute;
+                    /*edited 1/17/11*/
+                  margin-top:10px;
+                    /*end edited 1/17/11*/
+                  left:79px 
+                     }
+                     div.suggestions
+                      {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    font-family:Trebuchet MS;
+    font-size:20px;
+    z-index:10;
+}
+
+div.suggestions div {
+    cursor:pointer;
+     padding: 0px 3px 0px 3px;
+     margin-left:auto;
+     margin-right:auto;
+}
+
+div.suggestions div.current {
+    background-color:#ADFF2F ;
+    }
+    #more_inner1 {
+	text-align:center;
+	padding:4px;
+	font-size:14px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #fff;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #c0c0c0;
+	width:7em;
+	cursor: pointer;
+}
+ 
+#more_inner1.highlight1 {
+	font-weight: bold;
+	border: 1px solid #483D8B;
+	border-right-color: #6495ed;
+	border-bottom-color: #6495ed;
+}
+ 
+#box1 {  position:absolute;
+	top:20px; left:0px;
+	margin-top:-1px;
+	font-size:12px;
+	padding: 6px 4px;
+	width:120px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid gray;
+	border-top:1px solid #e2e2e2;
+	display: none;
+	cursor:default;
+}
+ 
+#box1.highlight1 {
+	width:119px;
+	border-width:2px;
+}
+ 
+#boxlink1 { color: #a5a5a5;
+	text-decoration: none;
+	cursor: default;
+	margin-left: 33px;
+}
+ 
+#boxlink1.highlight1 { color: #0000cd;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*Pop-up*/
+#fade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.searchwelltransform :: -webkit-scrollbar {
+    width: 12px;
+}
+
+.searchwelltransform ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.searchwelltransform ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.popup_block{
+	display: none; /*--hidden by default--*/
+	background: #fff;
+	padding: 20px;
+	border: 20px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	/*--CSS3 Box Shadows--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+img.btn_close {
+	float: right;
+	margin: -55px -55px 0 0;
+	border:0px;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+*html .popup_block {
+	position: absolute;
+}
+/*--frame for weather and local news--*/
+#weatherIframe
+{
+    width:274px;
+    height:378px;
+}

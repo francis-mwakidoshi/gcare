@@ -1,0 +1,54 @@
+root { 
+    display: block;
+
+}
+body{
+
+
+    text-align: justify;
+    font-family: 'Times New Roman',Times,serif;
+    background-image: url(http://localhost/Gcare/public/images/gmap.jpg);
+
+    
+}
+#header{
+    background-color: #cccccc;
+    width: 900px;
+    height: 100px;
+    margin-left: 225px;
+    margin-right: 300px;
+    
+position:relative;
+    background-image: url(http://localhost/Gcare/public/images/header1.png);
+  
+    
+}
+#main{
+    position: relative;
+    width: 900px;
+    height:300px;
+    margin-left: 225px;
+    margin-right: 300px;
+    background-color: #eae6dd;
+}
+#menubar{
+    width: 900px;
+    height: 42px;
+    background-repeat:no-repeat;
+ font-family: 'Times New Roman',Times,serif;
+background-color: #ebe9d4;
+border-top-width: 2px;
+    border-top-style: groove;
+    border-top-color: #660000;
+border-bottom-style: groove;
+    border-bottom-width: 2px;
+    border-bottom-color: #660000;
+}
+#resetpane{
+    width: 800px;
+    height: 250px;
+  float:left;
+  padding-left:50px;
+  position:absolute;
+  	
+}
