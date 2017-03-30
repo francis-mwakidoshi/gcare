@@ -54,8 +54,8 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/Gcare/functions/edit.php');
          mysql_close($link);
         ?>
         <br></br>
-        <a href="http://localhost/Gcare/pages/account.php?reset=yes">Change Password</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://localhost/Gcare/pages/account.php?update=yes">Edit Account Details</a>
+        <!--<a href="http://localhost/Gcare/pages/account.php?reset=yes">Change Password</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://localhost/Gcare/pages/account.php?update=yes">Edit Account Details</a>-->
                     <?php
                     if(isset($_GET['reset'])){
                         edit_password();

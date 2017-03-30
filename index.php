@@ -103,7 +103,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/Gcare/configurations/dbconnect.php');
  <div id="footer">
       Gcare &nbsp; | &nbsp; 2016
     <p style="font-size:.95em">Developed by&nbsp;&nbsp; | &nbsp;&nbsp;
-            Antony **** powered by Google.</p>
+            mwakidoshi **** powered by Google.</p>
    </div>
    <?php
    ob_end_flush();

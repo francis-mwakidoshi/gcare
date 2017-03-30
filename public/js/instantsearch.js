@@ -521,7 +521,7 @@ function addToMap(c)
         }
         else
         {
-          addToMap("Eldoret,Africa");
+          addToMap("Mombasa,Africa");
         }
     })
 }

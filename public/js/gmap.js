@@ -1,5 +1,5 @@
 
-$('#map').live('pageshow',function(event){
+$('#mapk').live('pageshow',function(event){
     navigator.geolocation.getCurrentPosition(function (location) {
           // Use location.coords.latitude and location.coords.longitude
           loadMap(location.coords.latitude, location.coords.longitude);
@@ -13,7 +13,7 @@ zoom: 13,
 center: myLatlng,
 mapTypeId: google.maps.MapTypeId.ROADMAP
  }
- map = new google.maps.Map(document.getElementById("map"), myOptions);
+ map = new google.maps.Map(document.getElementById("mapk"), myOptions);
 }
 
  
